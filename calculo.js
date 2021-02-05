@@ -17,6 +17,11 @@ function calcularAreaPerimetro() {
   if(longitudBase>300 || longitudAltura>300) {
     alert("Ingrese valores menores o iguales a 300");
   }
+  
+  else if(longitudBase<=0 || longitudAltura<=0) {
+    alert("Ingrese valores mayores a 0");
+  }
+  
   else {
     area = longitudBase * longitudAltura; 
     perimetro = (longitudBase * 2) + (longitudAltura * 2);

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #000;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 2rem;
+  max-width: 35%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+}
+
+form {
+  width: 30rem;
+  height: 10rem;
+}
+
+label {
+  display: block;
+  padding: 0.5rem;
+}
+
+input[type="text"] {
+  margin-left: 0.5rem;
+  outline: none;
+  border: 0;
+  border-radius: 9999px;
+  height: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="button"] {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #FFF;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+/* Neon Light 'Calcular' and 'Hacer otro cálculo' Button Animation Effects on Hover */
+input[type="button"]:hover {
+  background-color: #2196f3;
+  color: #000;
+  text-shadow: 0 0 10px #000, 0 0 40px #000, 0 0 80px #000;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.15s;
+}
+
+#botonBorrar {
+  margin: 1rem 2rem 2rem;
+}
+
+canvas {
+  display: block;
+  margin: 2rem auto;
+  box-shadow: 0px 0px 20px 5px #2196f3;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    box-shadow: 0 0 50px #2196f3;
+    filter: hue-rotate(0deg);
+  }
+  
+  20%{
+    box-shadow: 0 0 60px #2196f3;
+  }
+  
+  40%{
+    box-shadow: 0 0 40px #2196f3;
+  }
+  
+  60%{
+    box-shadow: 0 0 80px #2196f3;
+  }
+  
+  80%{
+    box-shadow: 0 0 100px #2196f3;
+  }
+  
+  100%{
+    box-shadow: 0 0 50px #2196f3;
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  canvas {
+    width: 300px;
+    height: 300px;
+  }
+}

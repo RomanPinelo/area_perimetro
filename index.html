@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área y perímetro de un rectángulo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1>Área y perímetro de un rectángulo</h1>
+    <p>Ingrese los datos:</p>
+    <form>
+      <label for="longitudBase">¿Cuál es la longitud de la base?:</label>
+      <input type="text" id="longitudBase">
+      <label for="longitudAltura">¿Cuál es la longitud de la altura?:</label>
+      <input type="text" id="longitudAltura">
+      <input type="button" value="Calcular" id="botonCalcular"> 
+    </form>
+    <br>
+    <canvas width="400" height="400" id="dibujoRectangulo"></canvas>
+    <p>Los resultados son:</p>
+    <p>El área es: <strong id="resultadoArea"></strong></p>
+    <p>El perímetro es: <strong id="resultadoPerimetro"></strong></p>
+    <input type="button" value="Hacer otro cálculo" id="botonBorrar">
+    <script src="calculo.js"></script>
+  </body>
+
+</html>

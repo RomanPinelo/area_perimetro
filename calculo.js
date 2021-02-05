@@ -14,13 +14,19 @@ function calcularAreaPerimetro() {
   
   var area,perimetro;
   
-  area = longitudBase * longitudAltura; 
-  perimetro = (longitudBase * 2) + (longitudAltura * 2);
+  if(longitudBase>300 || longitudAltura>300) {
+    alert("Ingrese valores menores a 300");
+  }
+  else {
+    area = longitudBase * longitudAltura; 
+    perimetro = (longitudBase * 2) + (longitudAltura * 2);
+
+    document.getElementById('resultadoArea').innerHTML=area + " unidades cuadradas";
+    document.getElementById('resultadoPerimetro').innerHTML=perimetro + " unidades";
+
+    dibujarRectangulo(longitudBase, longitudAltura);  
+  }
   
-  document.getElementById('resultadoArea').innerHTML=area + " unidades cuadradas";
-  document.getElementById('resultadoPerimetro').innerHTML=perimetro + " unidades";
-  
-  dibujarRectangulo(longitudBase, longitudAltura);
 
 }
 

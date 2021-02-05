@@ -43,4 +43,4 @@ También se agregó un botón para borrar los resultados, al presionarlo se borr
 
 En el siguiente link puedes ver la página funcionando: 
 
-https://romanpinelo.github.io/
+https://romanpinelo.github.io/area_perimetro/
